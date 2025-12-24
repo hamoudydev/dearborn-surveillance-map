@@ -1,0 +1,4 @@
+{"type": "FeatureCollection", "features": 
+[
+    {"type": "Feature", "geometry": {
+        "type": "Point", "coordinates": [-83.2003207, 42.3135354]}, "properties": {"name": "Dearborn Police Department", "type": "police", "addr:street": "Michigan Avenue", "website": "https://cityofdearborn.org/government/departments/police"}}]}

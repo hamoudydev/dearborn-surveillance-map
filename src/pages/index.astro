@@ -1,0 +1,24 @@
+---
+import Map from '../components/Map.astro';
+import '../styles/global.css';
+
+const mapboxToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dearborn ALPR Surveillance Map</title>
+  <meta name="description" content="Interactive map of Automated License Plate Recognition (ALPR) cameras in Dearborn, Michigan area">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+</head>
+<body>
+  <Map mapboxToken={mapboxToken} />
+  <header class="header">
+    <h1>Dearborn ALPR Surveillance Map</h1>
+    <p>Automated License Plate Recognition cameras in the Dearborn, MI area</p>
+  </header>
+</body>
+</html>

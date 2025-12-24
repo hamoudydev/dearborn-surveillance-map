@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-83.2748382, 42.3468473]}, "properties": {"name": "Unknown", "type": "surveillance"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-83.2446908, 42.3287347]}, "properties": {"name": "Unknown", "type": "surveillance"}}]}

@@ -1,0 +1,1932 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-12-24T19:34:57Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9407873739",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2315404,
+          42.2826816
+        ]
+      },
+      "id": "node/9407873739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12403380481",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "50",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.213282,
+          42.3282571
+        ]
+      },
+      "id": "node/12403380481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12403380485",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "130",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2133275,
+          42.335361
+        ]
+      },
+      "id": "node/12403380485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12403380491",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "310",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2129762,
+          42.3353616
+        ]
+      },
+      "id": "node/12403380491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12403380493",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "190",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2159015,
+          42.3235301
+        ]
+      },
+      "id": "node/12403380493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065429",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1566493,
+          42.3444043
+        ]
+      },
+      "id": "node/12408065429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065431",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1963527,
+          42.3508371
+        ]
+      },
+      "id": "node/12408065431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065432",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "70",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1958935,
+          42.3435582
+        ]
+      },
+      "id": "node/12408065432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065434",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1772951,
+          42.3511176
+        ]
+      },
+      "id": "node/12408065434"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065435",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "240",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2829898,
+          42.2982113
+        ]
+      },
+      "id": "node/12408065435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065436",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "220",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2218285,
+          42.3098215
+        ]
+      },
+      "id": "node/12408065436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065438",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "40",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1670845,
+          42.3246153
+        ]
+      },
+      "id": "node/12408065438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065440",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1545484,
+          42.3517215
+        ]
+      },
+      "id": "node/12408065440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065442",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "250",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1948135,
+          42.3438032
+        ]
+      },
+      "id": "node/12408065442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065443",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "220",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1666676,
+          42.3250247
+        ]
+      },
+      "id": "node/12408065443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065447",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1576074,
+          42.3511705
+        ]
+      },
+      "id": "node/12408065447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065449",
+        "camera:type": "fixed",
+        "direction": "240",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.157841,
+          42.3445928
+        ]
+      },
+      "id": "node/12408065449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12408065451",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "220",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2386929,
+          42.3076346
+        ]
+      },
+      "id": "node/12408065451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12485422323",
+        "camera:mount": "traffic_signal",
+        "camera:type": "fixed",
+        "direction": "280",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2175307,
+          42.2780583
+        ]
+      },
+      "id": "node/12485422323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12485422325",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "270",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2074694,
+          42.2903195
+        ]
+      },
+      "id": "node/12485422325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12485422328",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1754363,
+          42.307875
+        ]
+      },
+      "id": "node/12485422328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12485422329",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1752351,
+          42.3094578
+        ]
+      },
+      "id": "node/12485422329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742420",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "150",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2179346,
+          42.2779869
+        ]
+      },
+      "id": "node/12743742420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742421",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2712715,
+          42.283331
+        ]
+      },
+      "id": "node/12743742421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742422",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "200",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2710809,
+          42.2833918
+        ]
+      },
+      "id": "node/12743742422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742423",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2715267,
+          42.2970645
+        ]
+      },
+      "id": "node/12743742423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742424",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.284947,
+          42.297446
+        ]
+      },
+      "id": "node/12743742424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742425",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "100",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2853027,
+          42.2976053
+        ]
+      },
+      "id": "node/12743742425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742426",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "280",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2853594,
+          42.2977151
+        ]
+      },
+      "id": "node/12743742426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742427",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2859515,
+          42.304958
+        ]
+      },
+      "id": "node/12743742427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742428",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "250",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.28595,
+          42.3122701
+        ]
+      },
+      "id": "node/12743742428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742429",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2859447,
+          42.3121416
+        ]
+      },
+      "id": "node/12743742429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742430",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2631759,
+          42.302225
+        ]
+      },
+      "id": "node/12743742430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742431",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2634733,
+          42.3004606
+        ]
+      },
+      "id": "node/12743742431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742432",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "50",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2532617,
+          42.3117379
+        ]
+      },
+      "id": "node/12743742432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742433",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "200",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2615462,
+          42.3265246
+        ]
+      },
+      "id": "node/12743742433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742434",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "190",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.24987,
+          42.3261101
+        ]
+      },
+      "id": "node/12743742434"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742435",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "320",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2415487,
+          42.3109222
+        ]
+      },
+      "id": "node/12743742435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742436",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "150",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2345282,
+          42.3267432
+        ]
+      },
+      "id": "node/12743742436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742438",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2193992,
+          42.3214047
+        ]
+      },
+      "id": "node/12743742438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742439",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2170936,
+          42.3276697
+        ]
+      },
+      "id": "node/12743742439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742440",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "170",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2142122,
+          42.3303874
+        ]
+      },
+      "id": "node/12743742440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742444",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "260",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "note": "previously mounted on post in grass easement; moved circa July 2025",
+        "operator": "The Home Depot",
+        "operator:wikidata": "Q864407",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2130751,
+          42.3299569
+        ]
+      },
+      "id": "node/12743742444"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742445",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "300",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "The Home Depot",
+        "operator:wikidata": "Q864407",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2128402,
+          42.3313006
+        ]
+      },
+      "id": "node/12743742445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742446",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "170",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "The Home Depot",
+        "operator:wikidata": "Q864407",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2144937,
+          42.331264
+        ]
+      },
+      "id": "node/12743742446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742447",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "40",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "The Home Depot",
+        "operator:wikidata": "Q864407",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2144776,
+          42.3313189
+        ]
+      },
+      "id": "node/12743742447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742448",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "120",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2102957,
+          42.329029
+        ]
+      },
+      "id": "node/12743742448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12743742449",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "240",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2097468,
+          42.329347
+        ]
+      },
+      "id": "node/12743742449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745169198",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "40",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2098614,
+          42.311922
+        ]
+      },
+      "id": "node/12745169198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745169199",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "320",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "operator:wikidata": "Q134509512",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1841996,
+          42.301737
+        ]
+      },
+      "id": "node/12745169199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745169200",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "10",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1450665,
+          42.3040094
+        ]
+      },
+      "id": "node/12745169200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178201",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "220",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.143118,
+          42.3050582
+        ]
+      },
+      "id": "node/12745178201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178202",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "180",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1408202,
+          42.3110588
+        ]
+      },
+      "id": "node/12745178202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178203",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "240",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1578191,
+          42.330012
+        ]
+      },
+      "id": "node/12745178203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178204",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "60",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.158606,
+          42.3297393
+        ]
+      },
+      "id": "node/12745178204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178205",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1573382,
+          42.3505897
+        ]
+      },
+      "id": "node/12745178205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178206",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1770226,
+          42.3504253
+        ]
+      },
+      "id": "node/12745178206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178207",
+        "camera:mount": "pole",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1869545,
+          42.3502183
+        ]
+      },
+      "id": "node/12745178207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178208",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1867352,
+          42.3493361
+        ]
+      },
+      "id": "node/12745178208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178209",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1960686,
+          42.342261
+        ]
+      },
+      "id": "node/12745178209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178210",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1962176,
+          42.3362773
+        ]
+      },
+      "id": "node/12745178210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178211",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "20",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1955435,
+          42.3250924
+        ]
+      },
+      "id": "node/12745178211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178212",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "160",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2729087,
+          42.3257956
+        ]
+      },
+      "id": "node/12745178212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178213",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "200",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2726281,
+          42.3255111
+        ]
+      },
+      "id": "node/12745178213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178214",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "20",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2724455,
+          42.3249618
+        ]
+      },
+      "id": "node/12745178214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12745178215",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "340",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2722716,
+          42.3264867
+        ]
+      },
+      "id": "node/12745178215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13016397047",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "110",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2830553,
+          42.2815207
+        ]
+      },
+      "id": "node/13016397047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13038318920",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "260",
+        "electricity": "grid",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "University of Michigan-Dearborn Department of Public Safety",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2274137,
+          42.3127826
+        ]
+      },
+      "id": "node/13038318920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13038318921",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "230",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "University of Michigan-Dearborn Department of Public Safety",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2280396,
+          42.31532
+        ]
+      },
+      "id": "node/13038318921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13038318922",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "240",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "University of Michigan-Dearborn Department of Public Safety",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2306015,
+          42.3184206
+        ]
+      },
+      "id": "node/13038318922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13038318923",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "250",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "University of Michigan-Dearborn Department of Public Safety",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2331262,
+          42.3215445
+        ]
+      },
+      "id": "node/13038318923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13038318924",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "190",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "University of Michigan-Dearborn Department of Public Safety",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2225205,
+          42.3265023
+        ]
+      },
+      "id": "node/13038318924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13038318925",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "290",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "University of Michigan-Dearborn Department of Public Safety",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2229842,
+          42.3217449
+        ]
+      },
+      "id": "node/13038318925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13135580004",
+        "camera:mount": "post",
+        "camera:type": "fixed",
+        "direction": "40",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.1980189,
+          42.3015072
+        ]
+      },
+      "id": "node/13135580004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13329266502",
+        "camera:type": "fixed",
+        "direction": "341-26",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2602883,
+          42.3095014
+        ]
+      },
+      "id": "node/13329266502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13329283301",
+        "camera:type": "fixed",
+        "direction": "118-163",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2605263,
+          42.310146
+        ]
+      },
+      "id": "node/13329283301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13373314366",
+        "camera:mount": "street_lamp",
+        "camera:type": "fixed",
+        "direction": "335",
+        "electricity": "solar",
+        "man_made": "surveillance",
+        "manufacturer": "Flock Safety",
+        "manufacturer:wikidata": "Q108485435",
+        "note": "initially installed c.2022 and later removed, then re-installed 2025",
+        "operator": "Dearborn Police Department",
+        "surveillance": "public",
+        "surveillance:type": "ALPR",
+        "surveillance:zone": "traffic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2717692,
+          42.3018334
+        ]
+      },
+      "id": "node/13373314366"
+    }
+  ]
+}

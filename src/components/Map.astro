@@ -1,0 +1,625 @@
+---
+import cameraData from '../data/cameras.json';
+import boundaryData from '../data/boundary.json';
+import policeData from '../data/police.json';
+
+interface Props {
+  mapboxToken: string;
+}
+
+const { mapboxToken } = Astro.props;
+
+// Process data for stats
+const features = cameraData.features.filter((f: any) => f.properties['surveillance:type'] === 'ALPR');
+const totalCameras = features.length;
+
+const operatorCounts: Record<string, number> = {};
+features.forEach((f: any) => {
+  const op = f.properties.operator || 'Unknown';
+  operatorCounts[op] = (operatorCounts[op] || 0) + 1;
+});
+
+// Sort operators by count
+const sortedOperators = Object.entries(operatorCounts)
+  .sort((a, b) => b[1] - a[1])
+  .map(([name, count]) => ({ name, count }));
+
+const manufacturers: Record<string, number> = {};
+features.forEach((f: any) => {
+  const mfr = f.properties.manufacturer || 'Unknown';
+  manufacturers[mfr] = (manufacturers[mfr] || 0) + 1;
+});
+---
+
+<div id="map" class="map-container"></div>
+
+<!-- Controls Panel -->
+<div class="controls">
+  <div class="search-box">
+    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"></circle>
+      <path d="M21 21l-4.35-4.35"></path>
+    </svg>
+    <input type="text" id="search" placeholder="Search by operator, manufacturer..." />
+  </div>
+
+  <div class="filter-row">
+    <select id="operator-filter">
+      <option value="">All Operators ({totalCameras})</option>
+      {sortedOperators.map(op => (
+        <option value={op.name}>{op.name} ({op.count})</option>
+      ))}
+    </select>
+
+    <select id="manufacturer-filter">
+      <option value="">All Manufacturers</option>
+      {Object.entries(manufacturers).sort((a, b) => b[1] - a[1]).map(([name, count]) => (
+        <option value={name}>{name} ({count})</option>
+      ))}
+    </select>
+
+    <button id="toggle-table" class="btn-toggle" title="Toggle data table">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+        <path d="M3 9h18M9 21V9"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Stats Panel -->
+<div class="stats">
+  <div class="stat-card">
+    <div class="label">Visible Cameras</div>
+    <div class="value" id="visible-count">{totalCameras}</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Total ALPR</div>
+    <div class="value">{totalCameras}</div>
+  </div>
+</div>
+
+<!-- Layer Toggles -->
+<div class="layer-toggles">
+  <h3>Layers</h3>
+  <label class="toggle-item">
+    <input type="checkbox" id="layer-alpr" checked />
+    <span class="toggle-dot alpr"></span>
+    <span>ALPR Cameras ({totalCameras})</span>
+  </label>
+  <label class="toggle-item">
+    <input type="checkbox" id="layer-police" checked />
+    <span class="toggle-dot police-station"></span>
+    <span>Police Stations ({policeData.features.length})</span>
+  </label>
+  <label class="toggle-item">
+    <input type="checkbox" id="layer-boundary" checked />
+    <span class="toggle-line"></span>
+    <span>City Boundary</span>
+  </label>
+</div>
+
+<!-- Legend -->
+<div class="legend">
+  <h3>ALPR Operators</h3>
+  <div class="legend-item">
+    <span class="legend-dot police"></span>
+    <span>Police Departments</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-dot private"></span>
+    <span>Private (Retail/HOA)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-dot university"></span>
+    <span>University</span>
+  </div>
+</div>
+
+<!-- Data Table -->
+<div id="data-table" class="data-table hidden">
+  <div class="table-header">
+    <h2>Camera List</h2>
+    <button id="close-table" class="btn-close">&times;</button>
+  </div>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Manufacturer</th>
+          <th>Mount</th>
+          <th>Power</th>
+          <th>Direction</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="attribution">
+  Data from <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors
+</div>
+
+<script is:inline define:vars={{ cameraData, mapboxToken, boundaryData, policeData }}>
+  const MAPBOX_TOKEN = mapboxToken;
+  let map;
+  let currentPopup = null;
+
+  // Filter to ALPR cameras only
+  const alprData = {
+    ...cameraData,
+    features: cameraData.features.filter(f => f.properties['surveillance:type'] === 'ALPR')
+  };
+
+  // Create direction wedges for cameras
+  function createDirectionWedges(features) {
+    const wedgeFeatures = [];
+    const wedgeAngle = 40; // degrees width of the cone
+    const wedgeLength = 0.0008; // length in degrees (~80 meters)
+
+    features.forEach(feature => {
+      const dir = feature.properties.direction;
+      if (!dir) return;
+
+      // Handle multiple directions (e.g., "240;250")
+      const directions = String(dir).split(/[;,]/).map(d => parseFloat(d.trim()));
+
+      directions.forEach(direction => {
+        if (isNaN(direction)) return;
+
+        const [lng, lat] = feature.geometry.coordinates;
+        const dirRad = (direction - 90) * Math.PI / 180; // Convert to radians, adjust for map orientation
+        const halfAngle = (wedgeAngle / 2) * Math.PI / 180;
+
+        // Calculate wedge points
+        const point1 = [lng, lat];
+        const point2 = [
+          lng + wedgeLength * Math.cos(dirRad - halfAngle) * 1.3, // Adjust for latitude
+          lat + wedgeLength * Math.sin(dirRad - halfAngle)
+        ];
+        const point3 = [
+          lng + wedgeLength * Math.cos(dirRad + halfAngle) * 1.3,
+          lat + wedgeLength * Math.sin(dirRad + halfAngle)
+        ];
+
+        wedgeFeatures.push({
+          type: 'Feature',
+          properties: {
+            operator: feature.properties.operator,
+            direction: direction
+          },
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[point1, point2, point3, point1]]
+          }
+        });
+      });
+    });
+
+    return {
+      type: 'FeatureCollection',
+      features: wedgeFeatures
+    };
+  }
+
+  // State
+  let filteredData = { ...alprData };
+  let wedgeData = createDirectionWedges(alprData.features);
+
+  function getOperatorCategory(operator) {
+    if (!operator) return 'unknown';
+    const op = operator.toLowerCase();
+    if (op.includes('police') || op.includes('state')) return 'police';
+    if (op.includes('university')) return 'university';
+    return 'private';
+  }
+
+  function applyFilters() {
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const operatorFilter = document.getElementById('operator-filter').value;
+    const manufacturerFilter = document.getElementById('manufacturer-filter').value;
+
+    filteredData = {
+      ...alprData,
+      features: alprData.features.filter(f => {
+        const props = f.properties;
+        const operator = props.operator || '';
+        const manufacturer = props.manufacturer || '';
+
+        // Search filter
+        if (searchTerm) {
+          const searchable = `${operator} ${manufacturer} ${props['camera:mount'] || ''} ${props.electricity || ''}`.toLowerCase();
+          if (!searchable.includes(searchTerm)) return false;
+        }
+
+        // Operator filter
+        if (operatorFilter && operator !== operatorFilter) return false;
+
+        // Manufacturer filter
+        if (manufacturerFilter && manufacturer !== manufacturerFilter) return false;
+
+        return true;
+      })
+    };
+
+    // Update wedges
+    wedgeData = createDirectionWedges(filteredData.features);
+
+    // Update map
+    if (map && map.getSource('cameras')) {
+      map.getSource('cameras').setData(filteredData);
+      map.getSource('camera-wedges').setData(wedgeData);
+    }
+
+    // Update count
+    document.getElementById('visible-count').textContent = filteredData.features.length;
+
+    // Update table
+    updateTable();
+  }
+
+  function updateTable() {
+    const tbody = document.getElementById('table-body');
+    tbody.innerHTML = filteredData.features.map((f, idx) => {
+      const p = f.properties;
+      const coords = f.geometry.coordinates;
+      return `
+        <tr>
+          <td>${p.operator || 'Unknown'}</td>
+          <td>${p.manufacturer || 'Unknown'}</td>
+          <td>${p['camera:mount'] || '-'}</td>
+          <td>${p.electricity || '-'}</td>
+          <td>${p.direction ? p.direction + '°' : '-'}</td>
+          <td>
+            <button class="btn-fly" data-lng="${coords[0]}" data-lat="${coords[1]}" data-idx="${idx}">
+              View
+            </button>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    // Add click handlers for fly buttons
+    tbody.querySelectorAll('.btn-fly').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lng = parseFloat(btn.dataset.lng);
+        const lat = parseFloat(btn.dataset.lat);
+        const idx = parseInt(btn.dataset.idx);
+
+        map.flyTo({ center: [lng, lat], zoom: 16 });
+
+        // Show popup
+        setTimeout(() => {
+          const feature = filteredData.features[idx];
+          showPopup(feature);
+        }, 500);
+      });
+    });
+  }
+
+  function showPopup(feature) {
+    const props = feature.properties;
+    const coords = feature.geometry.coordinates;
+
+    if (currentPopup) currentPopup.remove();
+
+    const popupContent = `
+      <div class="popup-title">${props['surveillance:type'] || 'Surveillance'} Camera</div>
+      <div class="popup-row">
+        <span class="label">Operator</span>
+        <span class="value">${props.operator || 'Unknown'}</span>
+      </div>
+      <div class="popup-row">
+        <span class="label">Manufacturer</span>
+        <span class="value">${props.manufacturer || 'Unknown'}</span>
+      </div>
+      <div class="popup-row">
+        <span class="label">Mount</span>
+        <span class="value">${props['camera:mount'] || 'Unknown'}</span>
+      </div>
+      <div class="popup-row">
+        <span class="label">Power</span>
+        <span class="value">${props.electricity || 'Unknown'}</span>
+      </div>
+      ${props.direction ? `
+      <div class="popup-row">
+        <span class="label">Direction</span>
+        <span class="value">${props.direction}°</span>
+      </div>
+      ` : ''}
+      ${props.note ? `
+      <div class="popup-note">${props.note}</div>
+      ` : ''}
+    `;
+
+    currentPopup = new mapboxgl.Popup()
+      .setLngLat(coords)
+      .setHTML(popupContent)
+      .addTo(map);
+  }
+
+  function initMap() {
+    console.log('Initializing map with token:', MAPBOX_TOKEN ? 'present' : 'missing');
+    if (!MAPBOX_TOKEN) {
+      console.error('Mapbox token is missing!');
+      return;
+    }
+    mapboxgl.accessToken = MAPBOX_TOKEN;
+
+    map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v11',
+      center: [-83.21, 42.32],
+      zoom: 12,
+      pitch: 0
+    });
+
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+    map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
+
+    map.on('load', () => {
+      // Add Dearborn boundary
+      map.addSource('boundary', {
+        type: 'geojson',
+        data: boundaryData
+      });
+
+      // Boundary fill (subtle highlight)
+      map.addLayer({
+        id: 'boundary-fill',
+        type: 'fill',
+        source: 'boundary',
+        paint: {
+          'fill-color': '#ff4444',
+          'fill-opacity': 0.05
+        }
+      });
+
+      // Boundary line
+      map.addLayer({
+        id: 'boundary-line',
+        type: 'line',
+        source: 'boundary',
+        paint: {
+          'line-color': '#ff4444',
+          'line-width': 2,
+          'line-opacity': 0.7,
+          'line-dasharray': [2, 2]
+        }
+      });
+
+      // Add direction wedges
+      map.addSource('camera-wedges', {
+        type: 'geojson',
+        data: wedgeData
+      });
+
+      map.addLayer({
+        id: 'camera-wedges-fill',
+        type: 'fill',
+        source: 'camera-wedges',
+        paint: {
+          'fill-color': [
+            'case',
+            ['all',
+              ['has', 'operator'],
+              ['any',
+                ['in', 'Police', ['get', 'operator']],
+                ['in', 'State', ['get', 'operator']]
+              ]
+            ],
+            '#ff4444',
+            ['all',
+              ['has', 'operator'],
+              ['in', 'University', ['get', 'operator']]
+            ],
+            '#44aaff',
+            ['has', 'operator'],
+            '#ff9944',
+            '#888888'
+          ],
+          'fill-opacity': 0.4
+        }
+      });
+
+      map.addLayer({
+        id: 'camera-wedges-outline',
+        type: 'line',
+        source: 'camera-wedges',
+        paint: {
+          'line-color': [
+            'case',
+            ['all',
+              ['has', 'operator'],
+              ['any',
+                ['in', 'Police', ['get', 'operator']],
+                ['in', 'State', ['get', 'operator']]
+              ]
+            ],
+            '#ff4444',
+            ['all',
+              ['has', 'operator'],
+              ['in', 'University', ['get', 'operator']]
+            ],
+            '#44aaff',
+            ['has', 'operator'],
+            '#ff9944',
+            '#888888'
+          ],
+          'line-width': 1,
+          'line-opacity': 0.8
+        }
+      });
+
+      // Add cameras source
+      map.addSource('cameras', {
+        type: 'geojson',
+        data: filteredData
+      });
+
+      map.addLayer({
+        id: 'camera-points',
+        type: 'circle',
+        source: 'cameras',
+        paint: {
+          'circle-radius': [
+            'interpolate', ['linear'], ['zoom'],
+            10, 5,
+            14, 10,
+            18, 14
+          ],
+          'circle-color': [
+            'case',
+            ['all',
+              ['has', 'operator'],
+              ['any',
+                ['in', 'Police', ['get', 'operator']],
+                ['in', 'State', ['get', 'operator']]
+              ]
+            ],
+            '#ff4444',
+            ['all',
+              ['has', 'operator'],
+              ['in', 'University', ['get', 'operator']]
+            ],
+            '#44aaff',
+            ['has', 'operator'],
+            '#ff9944',
+            '#888888'
+          ],
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#ffffff',
+          'circle-opacity': 0.9
+        }
+      });
+
+      // Direction indicators using a small triangle shape
+      // We'll skip the icon for now since it requires a custom sprite
+
+      // Police stations layer
+      map.addSource('police', {
+        type: 'geojson',
+        data: policeData
+      });
+
+      map.addLayer({
+        id: 'police-points',
+        type: 'circle',
+        source: 'police',
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 6, 14, 12, 18, 16],
+          'circle-color': '#3b82f6',
+          'circle-stroke-width': 3,
+          'circle-stroke-color': '#1e3a8a',
+          'circle-opacity': 0.9
+        }
+      });
+
+      // Click handlers for all layers
+      map.on('click', 'camera-points', (e) => {
+        showPopup({ properties: e.features[0].properties, geometry: { coordinates: e.features[0].geometry.coordinates.slice() } });
+      });
+
+      map.on('click', 'police-points', (e) => {
+        const props = e.features[0].properties;
+        const coords = e.features[0].geometry.coordinates.slice();
+        if (currentPopup) currentPopup.remove();
+        currentPopup = new mapboxgl.Popup()
+          .setLngLat(coords)
+          .setHTML(`
+            <div class="popup-title">Police Station</div>
+            <div class="popup-row">
+              <span class="label">Name</span>
+              <span class="value">${props.name || 'Unknown'}</span>
+            </div>
+          `)
+          .addTo(map);
+      });
+
+      // Initial table render
+      updateTable();
+    });
+  }
+
+  // Track loading states
+  let domReady = false;
+  let mapboxReady = false;
+
+  function tryInit() {
+    if (domReady && mapboxReady) {
+      try {
+        initMap();
+      } catch (e) {
+        console.error('Map init error:', e);
+      }
+    }
+  }
+
+  function setupEventListeners() {
+    document.getElementById('search').addEventListener('input', applyFilters);
+    document.getElementById('operator-filter').addEventListener('change', applyFilters);
+    document.getElementById('manufacturer-filter').addEventListener('change', applyFilters);
+
+    document.getElementById('toggle-table').addEventListener('click', () => {
+      document.getElementById('data-table').classList.toggle('hidden');
+    });
+
+    document.getElementById('close-table').addEventListener('click', () => {
+      document.getElementById('data-table').classList.add('hidden');
+    });
+
+    // Layer toggle handlers
+    const layerMapping = {
+      'layer-alpr': ['camera-points', 'camera-wedges-fill', 'camera-wedges-outline'],
+      'layer-police': ['police-points'],
+      'layer-boundary': ['boundary-fill', 'boundary-line']
+    };
+
+    Object.entries(layerMapping).forEach(([toggleId, layers]) => {
+      const toggle = document.getElementById(toggleId);
+      if (toggle) {
+        toggle.addEventListener('change', (e) => {
+          const visibility = e.target.checked ? 'visible' : 'none';
+          layers.forEach(layerId => {
+            if (map && map.getLayer(layerId)) {
+              map.setLayoutProperty(layerId, 'visibility', visibility);
+            }
+          });
+        });
+      }
+    });
+  }
+
+  // Wait for DOM
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      domReady = true;
+      setupEventListeners();
+      tryInit();
+    });
+  } else {
+    domReady = true;
+    setupEventListeners();
+    tryInit();
+  }
+
+  // Load Mapbox CSS first
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css';
+  document.head.appendChild(link);
+
+  // Load Mapbox GL JS
+  const script = document.createElement('script');
+  script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js';
+  script.onload = () => {
+    mapboxReady = true;
+    tryInit();
+  };
+  script.onerror = (e) => console.error('Failed to load Mapbox GL JS:', e);
+  document.head.appendChild(script);
+</script>
