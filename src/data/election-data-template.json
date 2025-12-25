@@ -1,0 +1,1479 @@
+{
+  "election_info": {
+    "election_name": "Dearborn Municipal Election",
+    "election_date": "2024-11-05",
+    "jurisdiction": "City of Dearborn, Michigan"
+  },
+  "races": {
+    "mayor": {
+      "race_name": "Mayor",
+      "seats": 1,
+      "candidates": [
+        "Abdullah Hammoud",
+        "Nagi Almudhegi"
+      ],
+      "precincts": {
+        "1": {
+          "precinct_name": "Dearborn 1",
+          "registered_voters": 1953,
+          "results": {
+            "Abdullah Hammoud": 400,
+            "Nagi Almudhegi": 236
+          }
+        },
+        "2": {
+          "precinct_name": "Dearborn 2",
+          "registered_voters": 2100,
+          "results": {
+            "Abdullah Hammoud": 401,
+            "Nagi Almudhegi": 127
+          }
+        },
+        "3": {
+          "precinct_name": "Dearborn 3",
+          "registered_voters": 2604,
+          "results": {
+            "Abdullah Hammoud": 658,
+            "Nagi Almudhegi": 155
+          }
+        },
+        "4-5": {
+          "precinct_name": "Dearborn 4 & 5",
+          "registered_voters": 4830,
+          "results": {
+            "Abdullah Hammoud": 701,
+            "Nagi Almudhegi": 180
+          }
+        },
+        "6": {
+          "precinct_name": "Dearborn 6",
+          "registered_voters": 2154,
+          "results": {
+            "Abdullah Hammoud": 534,
+            "Nagi Almudhegi": 147
+          }
+        },
+        "7": {
+          "precinct_name": "Dearborn 7",
+          "registered_voters": 2731,
+          "results": {
+            "Abdullah Hammoud": 652,
+            "Nagi Almudhegi": 141
+          }
+        },
+        "8-9": {
+          "precinct_name": "Dearborn 8 & 9",
+          "registered_voters": 3609,
+          "results": {
+            "Abdullah Hammoud": 765,
+            "Nagi Almudhegi": 310
+          }
+        },
+        "10": {
+          "precinct_name": "Dearborn 10",
+          "registered_voters": 1780,
+          "results": {
+            "Abdullah Hammoud": 367,
+            "Nagi Almudhegi": 135
+          }
+        },
+        "11-12": {
+          "precinct_name": "Dearborn 11 & 12",
+          "registered_voters": 3471,
+          "results": {
+            "Abdullah Hammoud": 671,
+            "Nagi Almudhegi": 376
+          }
+        },
+        "13": {
+          "precinct_name": "Dearborn 13",
+          "registered_voters": 548,
+          "results": {
+            "Abdullah Hammoud": 191,
+            "Nagi Almudhegi": 42
+          }
+        },
+        "15-16": {
+          "precinct_name": "Dearborn 15 & 16",
+          "registered_voters": 3978,
+          "results": {
+            "Abdullah Hammoud": 729,
+            "Nagi Almudhegi": 439
+          }
+        },
+        "17": {
+          "precinct_name": "Dearborn 17",
+          "registered_voters": 2433,
+          "results": {
+            "Abdullah Hammoud": 498,
+            "Nagi Almudhegi": 198
+          }
+        },
+        "18": {
+          "precinct_name": "Dearborn 18",
+          "registered_voters": 2891,
+          "results": {
+            "Abdullah Hammoud": 427,
+            "Nagi Almudhegi": 322
+          }
+        },
+        "19": {
+          "precinct_name": "Dearborn 19",
+          "registered_voters": 1661,
+          "results": {
+            "Abdullah Hammoud": 327,
+            "Nagi Almudhegi": 191
+          }
+        },
+        "20": {
+          "precinct_name": "Dearborn 20",
+          "registered_voters": 1456,
+          "results": {
+            "Abdullah Hammoud": 210,
+            "Nagi Almudhegi": 196
+          }
+        },
+        "21": {
+          "precinct_name": "Dearborn 21",
+          "registered_voters": 1863,
+          "results": {
+            "Abdullah Hammoud": 285,
+            "Nagi Almudhegi": 198
+          }
+        },
+        "22-23": {
+          "precinct_name": "Dearborn 22 & 23",
+          "registered_voters": 2228,
+          "results": {
+            "Abdullah Hammoud": 570,
+            "Nagi Almudhegi": 112
+          }
+        },
+        "24": {
+          "precinct_name": "Dearborn 24",
+          "registered_voters": 1103,
+          "results": {
+            "Abdullah Hammoud": 310,
+            "Nagi Almudhegi": 111
+          }
+        },
+        "25-26": {
+          "precinct_name": "Dearborn 25 & 26",
+          "registered_voters": 3668,
+          "results": {
+            "Abdullah Hammoud": 771,
+            "Nagi Almudhegi": 440
+          }
+        },
+        "27": {
+          "precinct_name": "Dearborn 27",
+          "registered_voters": 1683,
+          "results": {
+            "Abdullah Hammoud": 395,
+            "Nagi Almudhegi": 178
+          }
+        },
+        "28": {
+          "precinct_name": "Dearborn 28",
+          "registered_voters": 1042,
+          "results": {
+            "Abdullah Hammoud": 213,
+            "Nagi Almudhegi": 130
+          }
+        },
+        "29-30": {
+          "precinct_name": "Dearborn 29 & 30",
+          "registered_voters": 1970,
+          "results": {
+            "Abdullah Hammoud": 408,
+            "Nagi Almudhegi": 214
+          }
+        },
+        "31-32": {
+          "precinct_name": "Dearborn 31 & 32",
+          "registered_voters": 3238,
+          "results": {
+            "Abdullah Hammoud": 1056,
+            "Nagi Almudhegi": 247
+          }
+        },
+        "33-34": {
+          "precinct_name": "Dearborn 33 & 34",
+          "registered_voters": 3149,
+          "results": {
+            "Abdullah Hammoud": 938,
+            "Nagi Almudhegi": 256
+          }
+        },
+        "35-36": {
+          "precinct_name": "Dearborn 35 & 36",
+          "registered_voters": 2170,
+          "results": {
+            "Abdullah Hammoud": 736,
+            "Nagi Almudhegi": 194
+          }
+        },
+        "37-38": {
+          "precinct_name": "Dearborn 37 & 38",
+          "registered_voters": 3460,
+          "results": {
+            "Abdullah Hammoud": 1009,
+            "Nagi Almudhegi": 330
+          }
+        },
+        "40-41": {
+          "precinct_name": "Dearborn 40 & 41",
+          "registered_voters": 2853,
+          "results": {
+            "Abdullah Hammoud": 978,
+            "Nagi Almudhegi": 261
+          }
+        },
+        "42-43": {
+          "precinct_name": "Dearborn 42 & 43",
+          "registered_voters": 2580,
+          "results": {
+            "Abdullah Hammoud": 820,
+            "Nagi Almudhegi": 249
+          }
+        },
+        "44": {
+          "precinct_name": "Dearborn 44",
+          "registered_voters": 1468,
+          "results": {
+            "Abdullah Hammoud": 486,
+            "Nagi Almudhegi": 191
+          }
+        },
+        "45": {
+          "precinct_name": "Dearborn 45",
+          "registered_voters": 1773,
+          "results": {
+            "Abdullah Hammoud": 394,
+            "Nagi Almudhegi": 202
+          }
+        },
+        "46": {
+          "precinct_name": "Dearborn 46",
+          "registered_voters": 1714,
+          "results": {
+            "Abdullah Hammoud": 407,
+            "Nagi Almudhegi": 178
+          }
+        },
+        "47-48": {
+          "precinct_name": "Dearborn 47 & 48",
+          "registered_voters": 2437,
+          "results": {
+            "Abdullah Hammoud": 568,
+            "Nagi Almudhegi": 265
+          }
+        },
+        "49-50": {
+          "precinct_name": "Dearborn 49 & 50",
+          "registered_voters": 3515,
+          "results": {
+            "Abdullah Hammoud": 656,
+            "Nagi Almudhegi": 343
+          }
+        }
+      }
+    },
+    "city_clerk": {
+      "race_name": "City Clerk",
+      "seats": 1,
+      "candidates": [
+        "George Darany",
+        "Sami Elhady"
+      ],
+      "precincts": {
+        "1": {
+          "precinct_name": "Dearborn 1",
+          "registered_voters": 1953,
+          "results": {
+            "George Darany": 127,
+            "Sami Elhady": 428
+          }
+        },
+        "2": {
+          "precinct_name": "Dearborn 2",
+          "registered_voters": 2100,
+          "results": {
+            "George Darany": 110,
+            "Sami Elhady": 428
+          }
+        },
+        "3": {
+          "precinct_name": "Dearborn 3",
+          "registered_voters": 2604,
+          "results": {
+            "George Darany": 208,
+            "Sami Elhady": 491
+          }
+        },
+        "4-5": {
+          "precinct_name": "Dearborn 4 & 5",
+          "registered_voters": 4830,
+          "results": {
+            "George Darany": 181,
+            "Sami Elhady": 521
+          }
+        },
+        "6": {
+          "precinct_name": "Dearborn 6",
+          "registered_voters": 2154,
+          "results": {
+            "George Darany": 151,
+            "Sami Elhady": 430
+          }
+        },
+        "7": {
+          "precinct_name": "Dearborn 7",
+          "registered_voters": 2731,
+          "results": {
+            "George Darany": 177,
+            "Sami Elhady": 509
+          }
+        },
+        "8-9": {
+          "precinct_name": "Dearborn 8 & 9",
+          "registered_voters": 3609,
+          "results": {
+            "George Darany": 248,
+            "Sami Elhady": 646
+          }
+        },
+        "10": {
+          "precinct_name": "Dearborn 10",
+          "registered_voters": 1780,
+          "results": {
+            "George Darany": 136,
+            "Sami Elhady": 285
+          }
+        },
+        "11-12": {
+          "precinct_name": "Dearborn 11 & 12",
+          "registered_voters": 3471,
+          "results": {
+            "George Darany": 265,
+            "Sami Elhady": 667
+          }
+        },
+        "13": {
+          "precinct_name": "Dearborn 13",
+          "registered_voters": 548,
+          "results": {
+            "George Darany": 158,
+            "Sami Elhady": 56
+          }
+        },
+        "15-16": {
+          "precinct_name": "Dearborn 15 & 16",
+          "registered_voters": 3978,
+          "results": {
+            "George Darany": 309,
+            "Sami Elhady": 715
+          }
+        },
+        "17": {
+          "precinct_name": "Dearborn 17",
+          "registered_voters": 2433,
+          "results": {
+            "George Darany": 216,
+            "Sami Elhady": 402
+          }
+        },
+        "18": {
+          "precinct_name": "Dearborn 18",
+          "registered_voters": 2891,
+          "results": {
+            "George Darany": 177,
+            "Sami Elhady": 488
+          }
+        },
+        "19": {
+          "precinct_name": "Dearborn 19",
+          "registered_voters": 1661,
+          "results": {
+            "George Darany": 110,
+            "Sami Elhady": 350
+          }
+        },
+        "20": {
+          "precinct_name": "Dearborn 20",
+          "registered_voters": 1456,
+          "results": {
+            "George Darany": 50,
+            "Sami Elhady": 321
+          }
+        },
+        "21": {
+          "precinct_name": "Dearborn 21",
+          "registered_voters": 1863,
+          "results": {
+            "George Darany": 65,
+            "Sami Elhady": 374
+          }
+        },
+        "22-23": {
+          "precinct_name": "Dearborn 22 & 23",
+          "registered_voters": 2228,
+          "results": {
+            "George Darany": 394,
+            "Sami Elhady": 249
+          }
+        },
+        "24": {
+          "precinct_name": "Dearborn 24",
+          "registered_voters": 1103,
+          "results": {
+            "George Darany": 328,
+            "Sami Elhady": 95
+          }
+        },
+        "25-26": {
+          "precinct_name": "Dearborn 25 & 26",
+          "registered_voters": 3668,
+          "results": {
+            "George Darany": 878,
+            "Sami Elhady": 292
+          }
+        },
+        "27": {
+          "precinct_name": "Dearborn 27",
+          "registered_voters": 1683,
+          "results": {
+            "George Darany": 410,
+            "Sami Elhady": 148
+          }
+        },
+        "28": {
+          "precinct_name": "Dearborn 28",
+          "registered_voters": 1042,
+          "results": {
+            "George Darany": 265,
+            "Sami Elhady": 69
+          }
+        },
+        "29-30": {
+          "precinct_name": "Dearborn 29 & 30",
+          "registered_voters": 1970,
+          "results": {
+            "George Darany": 476,
+            "Sami Elhady": 113
+          }
+        },
+        "31-32": {
+          "precinct_name": "Dearborn 31 & 32",
+          "registered_voters": 3238,
+          "results": {
+            "George Darany": 820,
+            "Sami Elhady": 355
+          }
+        },
+        "33-34": {
+          "precinct_name": "Dearborn 33 & 34",
+          "registered_voters": 3149,
+          "results": {
+            "George Darany": 742,
+            "Sami Elhady": 377
+          }
+        },
+        "35-36": {
+          "precinct_name": "Dearborn 35 & 36",
+          "registered_voters": 2170,
+          "results": {
+            "George Darany": 652,
+            "Sami Elhady": 212
+          }
+        },
+        "37-38": {
+          "precinct_name": "Dearborn 37 & 38",
+          "registered_voters": 3460,
+          "results": {
+            "George Darany": 903,
+            "Sami Elhady": 356
+          }
+        },
+        "40-41": {
+          "precinct_name": "Dearborn 40 & 41",
+          "registered_voters": 2853,
+          "results": {
+            "George Darany": 753,
+            "Sami Elhady": 404
+          }
+        },
+        "42-43": {
+          "precinct_name": "Dearborn 42 & 43",
+          "registered_voters": 2580,
+          "results": {
+            "George Darany": 760,
+            "Sami Elhady": 241
+          }
+        },
+        "44": {
+          "precinct_name": "Dearborn 44",
+          "registered_voters": 1468,
+          "results": {
+            "George Darany": 561,
+            "Sami Elhady": 99
+          }
+        },
+        "45": {
+          "precinct_name": "Dearborn 45",
+          "registered_voters": 1773,
+          "results": {
+            "George Darany": 469,
+            "Sami Elhady": 102
+          }
+        },
+        "46": {
+          "precinct_name": "Dearborn 46",
+          "registered_voters": 1714,
+          "results": {
+            "George Darany": 490,
+            "Sami Elhady": 96
+          }
+        },
+        "47-48": {
+          "precinct_name": "Dearborn 47 & 48",
+          "registered_voters": 2437,
+          "results": {
+            "George Darany": 670,
+            "Sami Elhady": 151
+          }
+        },
+        "49-50": {
+          "precinct_name": "Dearborn 49 & 50",
+          "registered_voters": 3515,
+          "results": {
+            "George Darany": 763,
+            "Sami Elhady": 201
+          }
+        }
+      }
+    },
+    "city_council": {
+      "race_name": "City Council",
+      "seats": 7,
+      "candidates": [
+        "Robert A. Abraham",
+        "Mubarek Ahmed",
+        "Othman Ali Alaansi",
+        "Kamal Alsawafy",
+        "Mark Andrew",
+        "Sharon Dulmage",
+        "Gary A. Enos",
+        "Mustapha Hammoud",
+        "Shadi Mawari",
+        "Devon O'Reilly",
+        "Ahmad Othman",
+        "Ken Paris",
+        "Michael T. Sareini"
+      ],
+      "precincts": {
+        "1": {
+          "precinct_name": "Dearborn 1",
+          "registered_voters": 1953,
+          "results": {
+            "Robert A. Abraham": 206,
+            "Mubarek Ahmed": 336,
+            "Othman Ali Alaansi": 384,
+            "Kamal Alsawafy": 341,
+            "Mark Andrew": 101,
+            "Sharon Dulmage": 52,
+            "Gary A. Enos": 72,
+            "Mustapha Hammoud": 312,
+            "Shadi Mawari": 327,
+            "Devon O'Reilly": 79,
+            "Ahmad Othman": 252,
+            "Ken Paris": 115,
+            "Michael T. Sareini": 326
+          }
+        },
+        "2": {
+          "precinct_name": "Dearborn 2",
+          "registered_voters": 2100,
+          "results": {
+            "Robert A. Abraham": 186,
+            "Mubarek Ahmed": 213,
+            "Othman Ali Alaansi": 267,
+            "Kamal Alsawafy": 295,
+            "Mark Andrew": 76,
+            "Sharon Dulmage": 63,
+            "Gary A. Enos": 49,
+            "Mustapha Hammoud": 319,
+            "Shadi Mawari": 240,
+            "Devon O'Reilly": 72,
+            "Ahmad Othman": 187,
+            "Ken Paris": 65,
+            "Michael T. Sareini": 319
+          }
+        },
+        "3": {
+          "precinct_name": "Dearborn 3",
+          "registered_voters": 2604,
+          "results": {
+            "Robert A. Abraham": 340,
+            "Mubarek Ahmed": 312,
+            "Othman Ali Alaansi": 367,
+            "Kamal Alsawafy": 448,
+            "Mark Andrew": 129,
+            "Sharon Dulmage": 111,
+            "Gary A. Enos": 122,
+            "Mustapha Hammoud": 546,
+            "Shadi Mawari": 390,
+            "Devon O'Reilly": 176,
+            "Ahmad Othman": 221,
+            "Ken Paris": 148,
+            "Michael T. Sareini": 568
+          }
+        },
+        "4-5": {
+          "precinct_name": "Dearborn 4 & 5",
+          "registered_voters": 3199,
+          "results": {
+            "Robert A. Abraham": 228,
+            "Mubarek Ahmed": 316,
+            "Othman Ali Alaansi": 365,
+            "Kamal Alsawafy": 568,
+            "Mark Andrew": 140,
+            "Sharon Dulmage": 84,
+            "Gary A. Enos": 100,
+            "Mustapha Hammoud": 571,
+            "Shadi Mawari": 375,
+            "Devon O'Reilly": 121,
+            "Ahmad Othman": 304,
+            "Ken Paris": 126,
+            "Michael T. Sareini": 543
+          }
+        },
+        "6": {
+          "precinct_name": "Dearborn 6",
+          "registered_voters": 2154,
+          "results": {
+            "Robert A. Abraham": 223,
+            "Mubarek Ahmed": 241,
+            "Othman Ali Alaansi": 348,
+            "Kamal Alsawafy": 378,
+            "Mark Andrew": 102,
+            "Sharon Dulmage": 67,
+            "Gary A. Enos": 69,
+            "Mustapha Hammoud": 451,
+            "Shadi Mawari": 343,
+            "Devon O'Reilly": 75,
+            "Ahmad Othman": 244,
+            "Ken Paris": 106,
+            "Michael T. Sareini": 434
+          }
+        },
+        "7": {
+          "precinct_name": "Dearborn 7",
+          "registered_voters": 2731,
+          "results": {
+            "Robert A. Abraham": 252,
+            "Mubarek Ahmed": 269,
+            "Othman Ali Alaansi": 358,
+            "Kamal Alsawafy": 450,
+            "Mark Andrew": 98,
+            "Sharon Dulmage": 103,
+            "Gary A. Enos": 96,
+            "Mustapha Hammoud": 508,
+            "Shadi Mawari": 379,
+            "Devon O'Reilly": 103,
+            "Ahmad Othman": 283,
+            "Ken Paris": 114,
+            "Michael T. Sareini": 484
+          }
+        },
+        "8-9": {
+          "precinct_name": "Dearborn 8 & 9",
+          "registered_voters": 3609,
+          "results": {
+            "Robert A. Abraham": 325,
+            "Mubarek Ahmed": 381,
+            "Othman Ali Alaansi": 447,
+            "Kamal Alsawafy": 562,
+            "Mark Andrew": 193,
+            "Sharon Dulmage": 145,
+            "Gary A. Enos": 160,
+            "Mustapha Hammoud": 630,
+            "Shadi Mawari": 573,
+            "Devon O'Reilly": 201,
+            "Ahmad Othman": 394,
+            "Ken Paris": 179,
+            "Michael T. Sareini": 595
+          }
+        },
+        "10": {
+          "precinct_name": "Dearborn 10",
+          "registered_voters": 1780,
+          "results": {
+            "Robert A. Abraham": 134,
+            "Mubarek Ahmed": 180,
+            "Othman Ali Alaansi": 217,
+            "Kamal Alsawafy": 270,
+            "Mark Andrew": 80,
+            "Sharon Dulmage": 79,
+            "Gary A. Enos": 64,
+            "Mustapha Hammoud": 295,
+            "Shadi Mawari": 251,
+            "Devon O'Reilly": 75,
+            "Ahmad Othman": 194,
+            "Ken Paris": 78,
+            "Michael T. Sareini": 262
+          }
+        },
+        "11-12": {
+          "precinct_name": "Dearborn 11 & 12",
+          "registered_voters": 3471,
+          "results": {
+            "Robert A. Abraham": 327,
+            "Mubarek Ahmed": 415,
+            "Othman Ali Alaansi": 534,
+            "Kamal Alsawafy": 534,
+            "Mark Andrew": 193,
+            "Sharon Dulmage": 140,
+            "Gary A. Enos": 146,
+            "Mustapha Hammoud": 575,
+            "Shadi Mawari": 604,
+            "Devon O'Reilly": 186,
+            "Ahmad Othman": 442,
+            "Ken Paris": 183,
+            "Michael T. Sareini": 534
+          }
+        },
+        "13": {
+          "precinct_name": "Dearborn 13",
+          "registered_voters": 548,
+          "results": {
+            "Robert A. Abraham": 141,
+            "Mubarek Ahmed": 30,
+            "Othman Ali Alaansi": 43,
+            "Kamal Alsawafy": 106,
+            "Mark Andrew": 114,
+            "Sharon Dulmage": 144,
+            "Gary A. Enos": 109,
+            "Mustapha Hammoud": 103,
+            "Shadi Mawari": 42,
+            "Devon O'Reilly": 139,
+            "Ahmad Othman": 34,
+            "Ken Paris": 147,
+            "Michael T. Sareini": 142
+          }
+        },
+        "15-16": {
+          "precinct_name": "Dearborn 15 & 16",
+          "registered_voters": 3978,
+          "results": {
+            "Robert A. Abraham": 367,
+            "Mubarek Ahmed": 491,
+            "Othman Ali Alaansi": 601,
+            "Kamal Alsawafy": 568,
+            "Mark Andrew": 230,
+            "Sharon Dulmage": 169,
+            "Gary A. Enos": 174,
+            "Mustapha Hammoud": 566,
+            "Shadi Mawari": 663,
+            "Devon O'Reilly": 195,
+            "Ahmad Othman": 513,
+            "Ken Paris": 235,
+            "Michael T. Sareini": 607
+          }
+        },
+        "17": {
+          "precinct_name": "Dearborn 17",
+          "registered_voters": 2433,
+          "results": {
+            "Robert A. Abraham": 263,
+            "Mubarek Ahmed": 266,
+            "Othman Ali Alaansi": 296,
+            "Kamal Alsawafy": 369,
+            "Mark Andrew": 139,
+            "Sharon Dulmage": 142,
+            "Gary A. Enos": 134,
+            "Mustapha Hammoud": 420,
+            "Shadi Mawari": 327,
+            "Devon O'Reilly": 154,
+            "Ahmad Othman": 234,
+            "Ken Paris": 177,
+            "Michael T. Sareini": 439
+          }
+        },
+        "18": {
+          "precinct_name": "Dearborn 18",
+          "registered_voters": 2891,
+          "results": {
+            "Robert A. Abraham": 208,
+            "Mubarek Ahmed": 343,
+            "Othman Ali Alaansi": 393,
+            "Kamal Alsawafy": 382,
+            "Mark Andrew": 146,
+            "Sharon Dulmage": 120,
+            "Gary A. Enos": 110,
+            "Mustapha Hammoud": 287,
+            "Shadi Mawari": 467,
+            "Devon O'Reilly": 119,
+            "Ahmad Othman": 321,
+            "Ken Paris": 126,
+            "Michael T. Sareini": 344
+          }
+        },
+        "19": {
+          "precinct_name": "Dearborn 19",
+          "registered_voters": 1661,
+          "results": {
+            "Robert A. Abraham": 140,
+            "Mubarek Ahmed": 232,
+            "Othman Ali Alaansi": 273,
+            "Kamal Alsawafy": 278,
+            "Mark Andrew": 93,
+            "Sharon Dulmage": 64,
+            "Gary A. Enos": 75,
+            "Mustapha Hammoud": 217,
+            "Shadi Mawari": 303,
+            "Devon O'Reilly": 75,
+            "Ahmad Othman": 225,
+            "Ken Paris": 100,
+            "Michael T. Sareini": 268
+          }
+        },
+        "20": {
+          "precinct_name": "Dearborn 20",
+          "registered_voters": 1456,
+          "results": {
+            "Robert A. Abraham": 76,
+            "Mubarek Ahmed": 307,
+            "Othman Ali Alaansi": 308,
+            "Kamal Alsawafy": 263,
+            "Mark Andrew": 81,
+            "Sharon Dulmage": 32,
+            "Gary A. Enos": 36,
+            "Mustapha Hammoud": 167,
+            "Shadi Mawari": 319,
+            "Devon O'Reilly": 33,
+            "Ahmad Othman": 261,
+            "Ken Paris": 41,
+            "Michael T. Sareini": 105
+          }
+        },
+        "21": {
+          "precinct_name": "Dearborn 21",
+          "registered_voters": 1863,
+          "results": {
+            "Robert A. Abraham": 88,
+            "Mubarek Ahmed": 316,
+            "Othman Ali Alaansi": 373,
+            "Kamal Alsawafy": 305,
+            "Mark Andrew": 75,
+            "Sharon Dulmage": 35,
+            "Gary A. Enos": 40,
+            "Mustapha Hammoud": 189,
+            "Shadi Mawari": 361,
+            "Devon O'Reilly": 20,
+            "Ahmad Othman": 275,
+            "Ken Paris": 45,
+            "Michael T. Sareini": 154
+          }
+        },
+        "22-23": {
+          "precinct_name": "Dearborn 22 & 23",
+          "registered_voters": 2228,
+          "results": {
+            "Robert A. Abraham": 340,
+            "Mubarek Ahmed": 152,
+            "Othman Ali Alaansi": 201,
+            "Kamal Alsawafy": 375,
+            "Mark Andrew": 277,
+            "Sharon Dulmage": 298,
+            "Gary A. Enos": 260,
+            "Mustapha Hammoud": 355,
+            "Shadi Mawari": 213,
+            "Devon O'Reilly": 300,
+            "Ahmad Othman": 133,
+            "Ken Paris": 317,
+            "Michael T. Sareini": 482
+          }
+        },
+        "24": {
+          "precinct_name": "Dearborn 24",
+          "registered_voters": 1103,
+          "results": {
+            "Robert A. Abraham": 238,
+            "Mubarek Ahmed": 65,
+            "Othman Ali Alaansi": 68,
+            "Kamal Alsawafy": 222,
+            "Mark Andrew": 227,
+            "Sharon Dulmage": 254,
+            "Gary A. Enos": 251,
+            "Mustapha Hammoud": 190,
+            "Shadi Mawari": 93,
+            "Devon O'Reilly": 236,
+            "Ahmad Othman": 55,
+            "Ken Paris": 250,
+            "Michael T. Sareini": 275
+          }
+        },
+        "25-26": {
+          "precinct_name": "Dearborn 25 & 26",
+          "registered_voters": 3668,
+          "results": {
+            "Robert A. Abraham": 608,
+            "Mubarek Ahmed": 188,
+            "Othman Ali Alaansi": 248,
+            "Kamal Alsawafy": 593,
+            "Mark Andrew": 639,
+            "Sharon Dulmage": 676,
+            "Gary A. Enos": 837,
+            "Mustapha Hammoud": 475,
+            "Shadi Mawari": 292,
+            "Devon O'Reilly": 680,
+            "Ahmad Othman": 168,
+            "Ken Paris": 763,
+            "Michael T. Sareini": 730
+          }
+        },
+        "27": {
+          "precinct_name": "Dearborn 27",
+          "registered_voters": 1683,
+          "results": {
+            "Robert A. Abraham": 304,
+            "Mubarek Ahmed": 103,
+            "Othman Ali Alaansi": 108,
+            "Kamal Alsawafy": 241,
+            "Mark Andrew": 323,
+            "Sharon Dulmage": 323,
+            "Gary A. Enos": 388,
+            "Mustapha Hammoud": 240,
+            "Shadi Mawari": 130,
+            "Devon O'Reilly": 320,
+            "Ahmad Othman": 81,
+            "Ken Paris": 370,
+            "Michael T. Sareini": 337
+          }
+        },
+        "28": {
+          "precinct_name": "Dearborn 28",
+          "registered_voters": 1042,
+          "results": {
+            "Robert A. Abraham": 217,
+            "Mubarek Ahmed": 49,
+            "Othman Ali Alaansi": 50,
+            "Kamal Alsawafy": 144,
+            "Mark Andrew": 180,
+            "Sharon Dulmage": 200,
+            "Gary A. Enos": 244,
+            "Mustapha Hammoud": 131,
+            "Shadi Mawari": 73,
+            "Devon O'Reilly": 201,
+            "Ahmad Othman": 44,
+            "Ken Paris": 228,
+            "Michael T. Sareini": 222
+          }
+        },
+        "29-30": {
+          "precinct_name": "Dearborn 29 & 30",
+          "registered_voters": 1970,
+          "results": {
+            "Robert A. Abraham": 356,
+            "Mubarek Ahmed": 83,
+            "Othman Ali Alaansi": 104,
+            "Kamal Alsawafy": 244,
+            "Mark Andrew": 359,
+            "Sharon Dulmage": 373,
+            "Gary A. Enos": 449,
+            "Mustapha Hammoud": 215,
+            "Shadi Mawari": 129,
+            "Devon O'Reilly": 369,
+            "Ahmad Othman": 73,
+            "Ken Paris": 417,
+            "Michael T. Sareini": 392
+          }
+        },
+        "31-32": {
+          "precinct_name": "Dearborn 31 & 32",
+          "registered_voters": 3238,
+          "results": {
+            "Robert A. Abraham": 654,
+            "Mubarek Ahmed": 165,
+            "Othman Ali Alaansi": 223,
+            "Kamal Alsawafy": 576,
+            "Mark Andrew": 435,
+            "Sharon Dulmage": 545,
+            "Gary A. Enos": 570,
+            "Mustapha Hammoud": 658,
+            "Shadi Mawari": 227,
+            "Devon O'Reilly": 567,
+            "Ahmad Othman": 158,
+            "Ken Paris": 630,
+            "Michael T. Sareini": 966
+          }
+        },
+        "33-34": {
+          "precinct_name": "Dearborn 33 & 34",
+          "registered_voters": 3149,
+          "results": {
+            "Robert A. Abraham": 612,
+            "Mubarek Ahmed": 184,
+            "Othman Ali Alaansi": 265,
+            "Kamal Alsawafy": 603,
+            "Mark Andrew": 486,
+            "Sharon Dulmage": 482,
+            "Gary A. Enos": 508,
+            "Mustapha Hammoud": 630,
+            "Shadi Mawari": 297,
+            "Devon O'Reilly": 553,
+            "Ahmad Othman": 206,
+            "Ken Paris": 636,
+            "Michael T. Sareini": 947
+          }
+        },
+        "35-36": {
+          "precinct_name": "Dearborn 35 & 36",
+          "registered_voters": 2170,
+          "results": {
+            "Robert A. Abraham": 523,
+            "Mubarek Ahmed": 146,
+            "Othman Ali Alaansi": 184,
+            "Kamal Alsawafy": 481,
+            "Mark Andrew": 389,
+            "Sharon Dulmage": 456,
+            "Gary A. Enos": 467,
+            "Mustapha Hammoud": 414,
+            "Shadi Mawari": 187,
+            "Devon O'Reilly": 453,
+            "Ahmad Othman": 100,
+            "Ken Paris": 537,
+            "Michael T. Sareini": 689
+          }
+        },
+        "37-38": {
+          "precinct_name": "Dearborn 37 & 38",
+          "registered_voters": 3460,
+          "results": {
+            "Robert A. Abraham": 811,
+            "Mubarek Ahmed": 248,
+            "Othman Ali Alaansi": 264,
+            "Kamal Alsawafy": 725,
+            "Mark Andrew": 616,
+            "Sharon Dulmage": 633,
+            "Gary A. Enos": 656,
+            "Mustapha Hammoud": 647,
+            "Shadi Mawari": 270,
+            "Devon O'Reilly": 674,
+            "Ahmad Othman": 167,
+            "Ken Paris": 824,
+            "Michael T. Sareini": 1059
+          }
+        },
+        "40-41": {
+          "precinct_name": "Dearborn 40 & 41",
+          "registered_voters": 2853,
+          "results": {
+            "Robert A. Abraham": 758,
+            "Mubarek Ahmed": 161,
+            "Othman Ali Alaansi": 233,
+            "Kamal Alsawafy": 707,
+            "Mark Andrew": 520,
+            "Sharon Dulmage": 515,
+            "Gary A. Enos": 616,
+            "Mustapha Hammoud": 622,
+            "Shadi Mawari": 229,
+            "Devon O'Reilly": 559,
+            "Ahmad Othman": 148,
+            "Ken Paris": 690,
+            "Michael T. Sareini": 983
+          }
+        },
+        "42-43": {
+          "precinct_name": "Dearborn 42 & 43",
+          "registered_voters": 2580,
+          "results": {
+            "Robert A. Abraham": 633,
+            "Mubarek Ahmed": 150,
+            "Othman Ali Alaansi": 173,
+            "Kamal Alsawafy": 569,
+            "Mark Andrew": 466,
+            "Sharon Dulmage": 552,
+            "Gary A. Enos": 555,
+            "Mustapha Hammoud": 504,
+            "Shadi Mawari": 152,
+            "Devon O'Reilly": 543,
+            "Ahmad Othman": 90,
+            "Ken Paris": 609,
+            "Michael T. Sareini": 816
+          }
+        },
+        "44": {
+          "precinct_name": "Dearborn 44",
+          "registered_voters": 1468,
+          "results": {
+            "Robert A. Abraham": 405,
+            "Mubarek Ahmed": 74,
+            "Othman Ali Alaansi": 110,
+            "Kamal Alsawafy": 294,
+            "Mark Andrew": 390,
+            "Sharon Dulmage": 412,
+            "Gary A. Enos": 438,
+            "Mustapha Hammoud": 279,
+            "Shadi Mawari": 106,
+            "Devon O'Reilly": 480,
+            "Ahmad Othman": 41,
+            "Ken Paris": 420,
+            "Michael T. Sareini": 461
+          }
+        },
+        "45": {
+          "precinct_name": "Dearborn 45",
+          "registered_voters": 1773,
+          "results": {
+            "Robert A. Abraham": 347,
+            "Mubarek Ahmed": 79,
+            "Othman Ali Alaansi": 85,
+            "Kamal Alsawafy": 279,
+            "Mark Andrew": 342,
+            "Sharon Dulmage": 363,
+            "Gary A. Enos": 398,
+            "Mustapha Hammoud": 233,
+            "Shadi Mawari": 111,
+            "Devon O'Reilly": 371,
+            "Ahmad Othman": 59,
+            "Ken Paris": 382,
+            "Michael T. Sareini": 415
+          }
+        },
+        "46": {
+          "precinct_name": "Dearborn 46",
+          "registered_voters": 1714,
+          "results": {
+            "Robert A. Abraham": 318,
+            "Mubarek Ahmed": 69,
+            "Othman Ali Alaansi": 89,
+            "Kamal Alsawafy": 293,
+            "Mark Andrew": 349,
+            "Sharon Dulmage": 358,
+            "Gary A. Enos": 390,
+            "Mustapha Hammoud": 204,
+            "Shadi Mawari": 110,
+            "Devon O'Reilly": 373,
+            "Ahmad Othman": 48,
+            "Ken Paris": 391,
+            "Michael T. Sareini": 401
+          }
+        },
+        "47-48": {
+          "precinct_name": "Dearborn 47 & 48",
+          "registered_voters": 2437,
+          "results": {
+            "Robert A. Abraham": 477,
+            "Mubarek Ahmed": 100,
+            "Othman Ali Alaansi": 126,
+            "Kamal Alsawafy": 374,
+            "Mark Andrew": 543,
+            "Sharon Dulmage": 544,
+            "Gary A. Enos": 653,
+            "Mustapha Hammoud": 290,
+            "Shadi Mawari": 140,
+            "Devon O'Reilly": 507,
+            "Ahmad Othman": 80,
+            "Ken Paris": 550,
+            "Michael T. Sareini": 567
+          }
+        },
+        "49-50": {
+          "precinct_name": "Dearborn 49 & 50",
+          "registered_voters": 3515,
+          "results": {
+            "Robert A. Abraham": 601,
+            "Mubarek Ahmed": 134,
+            "Othman Ali Alaansi": 149,
+            "Kamal Alsawafy": 447,
+            "Mark Andrew": 582,
+            "Sharon Dulmage": 626,
+            "Gary A. Enos": 675,
+            "Mustapha Hammoud": 357,
+            "Shadi Mawari": 206,
+            "Devon O'Reilly": 610,
+            "Ahmad Othman": 108,
+            "Ken Paris": 669,
+            "Michael T. Sareini": 642
+          }
+        }
+      }
+    },
+    "proposal": {
+      "race_name": "Proposal 1",
+      "seats": 1,
+      "candidates": [
+        "yes",
+        "no"
+      ],
+      "precincts": {
+        "1": {
+          "precinct_name": "Dearborn 1",
+          "registered_voters": 1953,
+          "results": {
+            "yes": 274,
+            "no": 300
+          }
+        },
+        "2": {
+          "precinct_name": "Dearborn 2",
+          "registered_voters": 2100,
+          "results": {
+            "yes": 209,
+            "no": 265
+          }
+        },
+        "3": {
+          "precinct_name": "Dearborn 3",
+          "registered_voters": 2604,
+          "results": {
+            "yes": 255,
+            "no": 489
+          }
+        },
+        "4-5": {
+          "precinct_name": "Dearborn 4 & 5",
+          "registered_voters": 4830,
+          "results": {
+            "yes": 264,
+            "no": 510
+          }
+        },
+        "6": {
+          "precinct_name": "Dearborn 6",
+          "registered_voters": 2154,
+          "results": {
+            "yes": 251,
+            "no": 366
+          }
+        },
+        "7": {
+          "precinct_name": "Dearborn 7",
+          "registered_voters": 2731,
+          "results": {
+            "yes": 272,
+            "no": 427
+          }
+        },
+        "8-9": {
+          "precinct_name": "Dearborn 8 & 9",
+          "registered_voters": 3609,
+          "results": {
+            "yes": 413,
+            "no": 561
+          }
+        },
+        "10": {
+          "precinct_name": "Dearborn 10",
+          "registered_voters": 1780,
+          "results": {
+            "yes": 208,
+            "no": 238
+          }
+        },
+        "11-12": {
+          "precinct_name": "Dearborn 11 & 12",
+          "registered_voters": 3471,
+          "results": {
+            "yes": 444,
+            "no": 524
+          }
+        },
+        "13": {
+          "precinct_name": "Dearborn 13",
+          "registered_voters": 548,
+          "results": {
+            "yes": 105,
+            "no": 126
+          }
+        },
+        "15-16": {
+          "precinct_name": "Dearborn 15 & 16",
+          "registered_voters": 3978,
+          "results": {
+            "yes": 524,
+            "no": 548
+          }
+        },
+        "17": {
+          "precinct_name": "Dearborn 17",
+          "registered_voters": 2433,
+          "results": {
+            "yes": 294,
+            "no": 362
+          }
+        },
+        "18": {
+          "precinct_name": "Dearborn 18",
+          "registered_voters": 2891,
+          "results": {
+            "yes": 366,
+            "no": 298
+          }
+        },
+        "19": {
+          "precinct_name": "Dearborn 19",
+          "registered_voters": 1661,
+          "results": {
+            "yes": 249,
+            "no": 222
+          }
+        },
+        "20": {
+          "precinct_name": "Dearborn 20",
+          "registered_voters": 1456,
+          "results": {
+            "yes": 294,
+            "no": 77
+          }
+        },
+        "21": {
+          "precinct_name": "Dearborn 21",
+          "registered_voters": 1863,
+          "results": {
+            "yes": 328,
+            "no": 110
+          }
+        },
+        "22-23": {
+          "precinct_name": "Dearborn 22 & 23",
+          "registered_voters": 2228,
+          "results": {
+            "yes": 186,
+            "no": 491
+          }
+        },
+        "24": {
+          "precinct_name": "Dearborn 24",
+          "registered_voters": 1103,
+          "results": {
+            "yes": 97,
+            "no": 328
+          }
+        },
+        "25-26": {
+          "precinct_name": "Dearborn 25 & 26",
+          "registered_voters": 3668,
+          "results": {
+            "yes": 285,
+            "no": 965
+          }
+        },
+        "27": {
+          "precinct_name": "Dearborn 27",
+          "registered_voters": 1683,
+          "results": {
+            "yes": 136,
+            "no": 448
+          }
+        },
+        "28": {
+          "precinct_name": "Dearborn 28",
+          "registered_voters": 1042,
+          "results": {
+            "yes": 64,
+            "no": 285
+          }
+        },
+        "29-30": {
+          "precinct_name": "Dearborn 29 & 30",
+          "registered_voters": 1970,
+          "results": {
+            "yes": 125,
+            "no": 510
+          }
+        },
+        "31-32": {
+          "precinct_name": "Dearborn 31 & 32",
+          "registered_voters": 3238,
+          "results": {
+            "yes": 212,
+            "no": 1094
+          }
+        },
+        "33-34": {
+          "precinct_name": "Dearborn 33 & 34",
+          "registered_voters": 3149,
+          "results": {
+            "yes": 195,
+            "no": 1030
+          }
+        },
+        "35-36": {
+          "precinct_name": "Dearborn 35 & 36",
+          "registered_voters": 2170,
+          "results": {
+            "yes": 110,
+            "no": 828
+          }
+        },
+        "37-38": {
+          "precinct_name": "Dearborn 37 & 38",
+          "registered_voters": 3460,
+          "results": {
+            "yes": 170,
+            "no": 1181
+          }
+        },
+        "40-41": {
+          "precinct_name": "Dearborn 40 & 41",
+          "registered_voters": 2853,
+          "results": {
+            "yes": 140,
+            "no": 1121
+          }
+        },
+        "42-43": {
+          "precinct_name": "Dearborn 42 & 43",
+          "registered_voters": 2580,
+          "results": {
+            "yes": 160,
+            "no": 937
+          }
+        },
+        "44": {
+          "precinct_name": "Dearborn 44",
+          "registered_voters": 1468,
+          "results": {
+            "yes": 98,
+            "no": 601
+          }
+        },
+        "45": {
+          "precinct_name": "Dearborn 45",
+          "registered_voters": 1773,
+          "results": {
+            "yes": 114,
+            "no": 511
+          }
+        },
+        "46": {
+          "precinct_name": "Dearborn 46",
+          "registered_voters": 1714,
+          "results": {
+            "yes": 105,
+            "no": 501
+          }
+        },
+        "47-48": {
+          "precinct_name": "Dearborn 47 & 48",
+          "registered_voters": 2437,
+          "results": {
+            "yes": 163,
+            "no": 694
+          }
+        },
+        "49-50": {
+          "precinct_name": "Dearborn 49 & 5",
+          "registered_voters": 3515,
+          "results": {
+            "yes": 205,
+            "no": 822
+          }
+        }
+      }
+    }
+  }
+}

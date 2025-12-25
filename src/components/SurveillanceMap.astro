@@ -32,6 +32,13 @@ features.forEach((f: any) => {
 
 <div id="map" class="map-container"></div>
 
+<!-- Back Button -->
+<a href="/" class="back-btn" title="Back to Home">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M19 12H5M12 19l-7-7 7-7"></path>
+  </svg>
+</a>
+
 <!-- Controls Panel -->
 <div class="controls">
   <div class="search-box">
@@ -137,27 +144,25 @@ features.forEach((f: any) => {
   // Create direction wedges for cameras
   function createDirectionWedges(features) {
     const wedgeFeatures = [];
-    const wedgeAngle = 40; // degrees width of the cone
-    const wedgeLength = 0.0008; // length in degrees (~80 meters)
+    const wedgeAngle = 40;
+    const wedgeLength = 0.0008;
 
     features.forEach(feature => {
       const dir = feature.properties.direction;
       if (!dir) return;
 
-      // Handle multiple directions (e.g., "240;250")
       const directions = String(dir).split(/[;,]/).map(d => parseFloat(d.trim()));
 
       directions.forEach(direction => {
         if (isNaN(direction)) return;
 
         const [lng, lat] = feature.geometry.coordinates;
-        const dirRad = (direction - 90) * Math.PI / 180; // Convert to radians, adjust for map orientation
+        const dirRad = (direction - 90) * Math.PI / 180;
         const halfAngle = (wedgeAngle / 2) * Math.PI / 180;
 
-        // Calculate wedge points
         const point1 = [lng, lat];
         const point2 = [
-          lng + wedgeLength * Math.cos(dirRad - halfAngle) * 1.3, // Adjust for latitude
+          lng + wedgeLength * Math.cos(dirRad - halfAngle) * 1.3,
           lat + wedgeLength * Math.sin(dirRad - halfAngle)
         ];
         const point3 = [
@@ -185,17 +190,8 @@ features.forEach((f: any) => {
     };
   }
 
-  // State
   let filteredData = { ...alprData };
   let wedgeData = createDirectionWedges(alprData.features);
-
-  function getOperatorCategory(operator) {
-    if (!operator) return 'unknown';
-    const op = operator.toLowerCase();
-    if (op.includes('police') || op.includes('state')) return 'police';
-    if (op.includes('university')) return 'university';
-    return 'private';
-  }
 
   function applyFilters() {
     const searchTerm = document.getElementById('search').value.toLowerCase();
@@ -209,35 +205,26 @@ features.forEach((f: any) => {
         const operator = props.operator || '';
         const manufacturer = props.manufacturer || '';
 
-        // Search filter
         if (searchTerm) {
           const searchable = `${operator} ${manufacturer} ${props['camera:mount'] || ''} ${props.electricity || ''}`.toLowerCase();
           if (!searchable.includes(searchTerm)) return false;
         }
 
-        // Operator filter
         if (operatorFilter && operator !== operatorFilter) return false;
-
-        // Manufacturer filter
         if (manufacturerFilter && manufacturer !== manufacturerFilter) return false;
 
         return true;
       })
     };
 
-    // Update wedges
     wedgeData = createDirectionWedges(filteredData.features);
 
-    // Update map
     if (map && map.getSource('cameras')) {
       map.getSource('cameras').setData(filteredData);
       map.getSource('camera-wedges').setData(wedgeData);
     }
 
-    // Update count
     document.getElementById('visible-count').textContent = filteredData.features.length;
-
-    // Update table
     updateTable();
   }
 
@@ -262,7 +249,6 @@ features.forEach((f: any) => {
       `;
     }).join('');
 
-    // Add click handlers for fly buttons
     tbody.querySelectorAll('.btn-fly').forEach(btn => {
       btn.addEventListener('click', () => {
         const lng = parseFloat(btn.dataset.lng);
@@ -271,7 +257,6 @@ features.forEach((f: any) => {
 
         map.flyTo({ center: [lng, lat], zoom: 16 });
 
-        // Show popup
         setTimeout(() => {
           const feature = filteredData.features[idx];
           showPopup(feature);
@@ -322,7 +307,6 @@ features.forEach((f: any) => {
   }
 
   function initMap() {
-    console.log('Initializing map with token:', MAPBOX_TOKEN ? 'present' : 'missing');
     if (!MAPBOX_TOKEN) {
       console.error('Mapbox token is missing!');
       return;
@@ -347,7 +331,6 @@ features.forEach((f: any) => {
         data: boundaryData
       });
 
-      // Boundary fill (subtle highlight)
       map.addLayer({
         id: 'boundary-fill',
         type: 'fill',
@@ -358,7 +341,6 @@ features.forEach((f: any) => {
         }
       });
 
-      // Boundary line
       map.addLayer({
         id: 'boundary-line',
         type: 'line',
@@ -476,37 +458,21 @@ features.forEach((f: any) => {
         }
       });
 
-      // Direction indicators using a small triangle shape
-      // We'll skip the icon for now since it requires a custom sprite
-
-
-      // Click handlers for all layers
       map.on('click', 'camera-points', (e) => {
         showPopup({ properties: e.features[0].properties, geometry: { coordinates: e.features[0].geometry.coordinates.slice() } });
       });
 
-      map.on('click', 'police-points', (e) => {
-        const props = e.features[0].properties;
-        const coords = e.features[0].geometry.coordinates.slice();
-        if (currentPopup) currentPopup.remove();
-        currentPopup = new mapboxgl.Popup()
-          .setLngLat(coords)
-          .setHTML(`
-            <div class="popup-title">Police Station</div>
-            <div class="popup-row">
-              <span class="label">Name</span>
-              <span class="value">${props.name || 'Unknown'}</span>
-            </div>
-          `)
-          .addTo(map);
+      map.on('mouseenter', 'camera-points', () => {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+      map.on('mouseleave', 'camera-points', () => {
+        map.getCanvas().style.cursor = '';
       });
 
-      // Initial table render
       updateTable();
     });
   }
 
-  // Track loading states
   let domReady = false;
   let mapboxReady = false;
 
@@ -534,7 +500,6 @@ features.forEach((f: any) => {
     });
   }
 
-  // Wait for DOM
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
       domReady = true;
@@ -547,13 +512,11 @@ features.forEach((f: any) => {
     tryInit();
   }
 
-  // Load Mapbox CSS first
   const link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = 'https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css';
   document.head.appendChild(link);
 
-  // Load Mapbox GL JS
   const script = document.createElement('script');
   script.src = 'https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js';
   script.onload = () => {

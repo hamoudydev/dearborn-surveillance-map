@@ -16,6 +16,467 @@ body {
   color: #fff;
 }
 
+/* Home Page */
+body.home-page {
+  overflow: auto;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.home-header p {
+  font-size: 1rem;
+  color: #888;
+}
+
+.map-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+.map-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.map-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.map-card.surveillance:hover {
+  border-color: #ff4444;
+  box-shadow: 0 8px 30px rgba(255, 68, 68, 0.2);
+}
+
+.map-card.election:hover {
+  border-color: #533483;
+  box-shadow: 0 8px 30px rgba(83, 52, 131, 0.3);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+.map-card.surveillance .card-icon {
+  color: #ff4444;
+}
+
+.map-card.election .card-icon {
+  color: #533483;
+}
+
+.map-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.map-card p {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.card-cta {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.map-card:hover .card-cta {
+  color: #fff;
+}
+
+.home-footer {
+  margin-top: 3rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.home-footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+.home-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Back Button */
+.back-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.back-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Legend Scale */
+.legend-scale {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.65rem;
+}
+
+.scale-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460, #533483, #e94560);
+}
+
+.scale-label {
+  color: #666;
+}
+
+/* Race Selector */
+.race-selector {
+  position: fixed;
+  top: 4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.race-selector label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.race-selector select {
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.race-selector select:focus {
+  outline: none;
+  border-color: #533483;
+}
+
+.race-selector select option {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+#candidate-select {
+  max-width: 180px;
+}
+
+#candidate-select.hidden {
+  display: none;
+}
+
+.race-selector {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selector-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.selector-row.hidden {
+  display: none;
+}
+
+.compare-btn {
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #888;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.compare-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.compare-btn.active {
+  background: rgba(52, 152, 219, 0.3);
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.compare-selectors {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.compare-selectors.hidden {
+  display: none;
+}
+
+.compare-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.compare-item-1 label {
+  font-size: 0.75rem;
+  color: #3498db;
+}
+
+.compare-item-1 select {
+  padding: 0.4rem 0.6rem;
+  background: rgba(52, 152, 219, 0.15);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.compare-item-1 select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.compare-item-2 label {
+  font-size: 0.75rem;
+  color: #e67e22;
+}
+
+.compare-item-2 select {
+  padding: 0.4rem 0.6rem;
+  background: rgba(230, 126, 34, 0.15);
+  border: 1px solid rgba(230, 126, 34, 0.3);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.compare-item-2 select:focus {
+  outline: none;
+  border-color: #e67e22;
+}
+
+.compare-vs {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: bold;
+}
+
+#compare-candidate-1,
+#compare-candidate-2 {
+  max-width: 140px;
+}
+
+/* Comparison popup styles */
+.popup-compare {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.compare-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.compare-row .label {
+  flex: 1;
+  font-size: 0.85rem;
+}
+
+.compare-row .value {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.compare-row .votes {
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.compare-diff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-left: 3px solid #666;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.compare-diff .diff-label {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.compare-diff .diff-value {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Election Legend - scrollable for many candidates */
+#election-legend {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#election-legend .legend-item {
+  font-size: 0.75rem;
+}
+
+/* Popup enhancements for election results */
+.popup-subtitle {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.popup-results {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.popup-results .popup-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.popup-results .popup-row.winner {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 -0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+}
+
+.popup-results .popup-row.winner .label {
+  color: #fff;
+  font-weight: 600;
+}
+
+.candidate-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.popup-results .label {
+  flex: 1;
+  font-size: 0.75rem;
+}
+
+.popup-results .value {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.popup-results .value .pct {
+  color: #888;
+  font-weight: 400;
+}
+
+/* Pie Chart in Popup */
+.popup-chart {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.popup-chart svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
 .map-container {
   position: fixed;
   top: 0;
@@ -36,7 +497,7 @@ body {
   right: 0;
   z-index: 15;
   background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0) 100%);
-  padding: 1rem 1.5rem 2rem;
+  padding: 1rem 1.5rem 2rem 4rem;
   pointer-events: none;
 }
 
@@ -186,6 +647,62 @@ body {
   color: #ff4444;
 }
 
+/* Vote Totals */
+.vote-totals {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem;
+  backdrop-filter: blur(10px);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.vote-total-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.vote-total-row:last-child {
+  border-bottom: none;
+}
+
+.vote-total-row .candidate-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.vote-total-row .candidate-name {
+  flex: 1;
+  font-size: 0.8rem;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vote-total-row .candidate-votes {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: right;
+}
+
+.vote-total-row .candidate-votes .pct {
+  font-weight: normal;
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.stats.compare-mode .vote-totals {
+  display: none;
+}
+
 /* Legend */
 .legend {
   position: fixed;
@@ -236,6 +753,21 @@ body {
 
 .legend-dot.university {
   background: #44aaff;
+}
+
+.legend-dot.precinct {
+  background: linear-gradient(135deg, #533483 0%, #e94560 100%);
+}
+
+.legend-note {
+  font-size: 0.7rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* Data Table */
@@ -437,7 +969,7 @@ body {
   }
 
   .header {
-    padding: 0.75rem 1rem 1.5rem;
+    padding: 0.75rem 1rem 1.5rem 3.5rem;
   }
 
   .header h1 {
@@ -448,8 +980,21 @@ body {
     font-size: 0.7rem;
   }
 
+  .race-selector {
+    top: 3.5rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .race-selector label {
+    display: none;
+  }
+
+  .race-selector select {
+    font-size: 0.75rem;
+  }
+
   .controls {
-    top: 4rem;
+    top: 5rem;
     left: 0.75rem;
     right: 0.75rem;
     max-width: none;
@@ -524,7 +1069,7 @@ body {
   }
 
   .controls {
-    top: 3.5rem;
+    top: 4rem;
   }
 
   .filter-row {
@@ -545,6 +1090,14 @@ body {
 
   .stat-card {
     flex: 1;
+  }
+
+  .home-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .map-cards {
+    grid-template-columns: 1fr;
   }
 }
 

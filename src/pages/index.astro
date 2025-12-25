@@ -1,8 +1,5 @@
 ---
-import Map from '../components/Map.astro';
 import '../styles/global.css';
-
-const mapboxToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
 ---
 
 <!DOCTYPE html>
@@ -10,15 +7,46 @@ const mapboxToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dearborn ALPR Surveillance Map</title>
-  <meta name="description" content="Interactive map of Automated License Plate Recognition (ALPR) cameras in Dearborn, Michigan area">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+  <title>Dearborn Maps</title>
+  <meta name="description" content="Interactive maps for Dearborn, Michigan - Surveillance cameras and election data">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
 </head>
-<body>
-  <Map mapboxToken={mapboxToken} />
-  <header class="header">
-    <h1>Dearborn ALPR Surveillance Map</h1>
-    <p>Automated License Plate Recognition cameras in the Dearborn, MI area</p>
-  </header>
+<body class="home-page">
+  <div class="home-container">
+    <header class="home-header">
+      <h1>Dearborn Maps</h1>
+      <p>Interactive data visualization for the City of Dearborn, Michigan</p>
+    </header>
+
+    <div class="map-cards">
+      <a href="/surveillance" class="map-card surveillance">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+        </div>
+        <h2>Surveillance Map</h2>
+        <p>ALPR cameras and surveillance infrastructure across Dearborn</p>
+        <span class="card-cta">View Map &rarr;</span>
+      </a>
+
+      <a href="/election-data" class="map-card election">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"></path>
+          </svg>
+        </div>
+        <h2>Election Data</h2>
+        <p>Voting precincts and election results by precinct</p>
+        <span class="card-cta">View Map &rarr;</span>
+      </a>
+
+    </div>
+
+    <footer class="home-footer">
+      <p>Data from <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and <a href="https://www.michigan.gov/sos" target="_blank">Michigan SOS</a></p>
+    </footer>
+  </div>
 </body>
 </html>
