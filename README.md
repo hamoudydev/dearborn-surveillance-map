@@ -1,44 +1,34 @@
-# Dearborn ALPR Surveillance Map
+# Dearborn Maps
 
-An interactive map visualizing Automated License Plate Recognition (ALPR) cameras and surveillance infrastructure in Dearborn, Michigan.
+Interactive data visualization maps for the City of Dearborn, Michigan.
 
-![Dearborn Surveillance Map](https://img.shields.io/badge/cameras-78-red) ![Police Stations](https://img.shields.io/badge/police%20stations-6-blue) ![Built with Astro](https://img.shields.io/badge/built%20with-Astro-purple)
+![Built with Astro](https://img.shields.io/badge/built%20with-Astro-purple) ![Mapbox](https://img.shields.io/badge/maps-Mapbox-blue)
 
-## Overview
+## Maps
 
-This project maps publicly documented surveillance cameras in the Dearborn, MI area using data from [OpenStreetMap](https://www.openstreetmap.org). Similar to projects like [DeFlock](https://deflock.me) and [LPR Maps](https://lprmaps.com), it provides transparency into the growing network of automated surveillance systems.
+### Surveillance Map
+Visualizes Automated License Plate Recognition (ALPR) cameras and surveillance infrastructure using data from OpenStreetMap.
 
-## Features
+- ALPR cameras with direction cones
+- Filter by operator and manufacturer
+- Data table with fly-to functionality
+- Click popups with camera details
 
-- **Interactive Mapbox map** with dark theme
-- **ALPR cameras** with direction cones showing camera orientation
-- **Dearborn city boundary** overlay
-- **Filter & search** by operator, manufacturer
-- **Data table view** with fly-to functionality
-- **Mobile responsive** design
-- **Click popups** with camera details (operator, manufacturer, mount type, power source)
+### Election Data Map
+Displays voting precincts and election results with interactive comparison features.
 
-## Data Sources
-
-All data is sourced from [OpenStreetMap](https://www.openstreetmap.org) under the [ODbL license](https://opendatacommons.org/licenses/odbl/).
-
-### Key OSM Tags Used
-
-| Tag | Description |
-|-----|-------------|
-| `man_made=surveillance` | Surveillance device |
-| `surveillance:type=ALPR` | Automated License Plate Recognition |
-| `operator=*` | Operating organization |
-| `manufacturer=*` | Camera manufacturer (Flock Safety, Motorola, etc.) |
-| `direction=*` | Camera pointing direction (degrees) |
-| `camera:mount=*` | Mount type (pole, wall, street_lamp) |
+- Precinct boundaries with election results
+- Multiple race selection (Mayor, City Council, Proposals)
+- Candidate-based color coding with margin intensity
+- Cross-race comparison mode
+- Vote totals by candidate
 
 ## Tech Stack
 
 - **[Astro](https://astro.build)** - Static site framework
 - **[Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/)** - Interactive mapping
-- **[OpenStreetMap](https://www.openstreetmap.org)** - Data source
-- **[Overpass API](https://overpass-api.de)** - OSM data queries
+- **[OpenStreetMap](https://www.openstreetmap.org)** - Surveillance data source
+- **[Michigan SOS](https://www.michigan.gov/sos)** - Election data source
 
 ## Setup
 
@@ -51,8 +41,8 @@ All data is sourced from [OpenStreetMap](https://www.openstreetmap.org) under th
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dearborn-surveillance-map.git
-cd dearborn-surveillance-map
+git clone https://github.com/yourusername/dearborn-maps.git
+cd dearborn-maps
 
 # Install dependencies
 bun install
@@ -77,85 +67,36 @@ bun run build
 
 Output is in the `dist/` folder.
 
-## Updating Data
-
-To refresh camera data from OpenStreetMap:
-
-1. Go to [Overpass Turbo](https://overpass-turbo.eu)
-2. Run this query:
-
-```
-[out:json][timeout:120];
-
-{{geocodeArea:Dearborn, Michigan, USA}}->.dearborn;
-
-(
-  node["man_made"="surveillance"](area.dearborn);
-  way["man_made"="surveillance"](area.dearborn);
-);
-
-out body;
->;
-out skel qt;
-```
-
-3. Export as GeoJSON
-4. Replace `src/data/cameras.json`
-
-## Contributing Data to OpenStreetMap
-
-If you spot surveillance cameras not on the map, you can add them to OpenStreetMap:
-
-1. Create an account at [openstreetmap.org](https://www.openstreetmap.org)
-2. Use the iD editor or [JOSM](https://josm.openstreetmap.de)
-3. Add a node with these tags:
-   - `man_made=surveillance`
-   - `surveillance:type=ALPR` (or `camera` for general CCTV)
-   - `operator=*` (e.g., "Dearborn Police Department")
-   - `manufacturer=*` (e.g., "Flock Safety")
-   - `direction=*` (0-360 degrees from north)
-   - `camera:mount=*` (pole, wall, street_lamp)
-
-### Identifying Flock Safety Cameras
-
-Flock Safety ALPR cameras are common and recognizable:
-- Solar panel on top
-- Small camera housing
-- Usually mounted on dedicated poles
-- Often at neighborhood entrances and major intersections
-
 ## Project Structure
 
 ```
-dearborn-surveillance-map/
+dearborn-maps/
 ├── src/
 │   ├── pages/
-│   │   └── index.astro          # Main page
+│   │   ├── index.astro              # Home page
+│   │   ├── surveillance.astro       # Surveillance map
+│   │   └── election-data.astro      # Election data map
 │   ├── components/
-│   │   └── Map.astro            # Map component
+│   │   ├── Map.astro                # Surveillance map component
+│   │   └── PrecinctMap.astro        # Election map component
 │   ├── data/
-│   │   ├── cameras.json         # ALPR camera data
-│   │   ├── boundary.json        # Dearborn city boundary
+│   │   ├── cameras.json             # ALPR camera data
+│   │   ├── boundary.json            # Dearborn city boundary
+│   │   ├── precincts.json           # Voting precinct boundaries
+│   │   └── election-data-template.json  # Election results
 │   └── styles/
-│       └── global.css           # Styles
+│       └── global.css               # Styles
 ├── .env.example
 ├── astro.config.mjs
 ├── package.json
 └── README.md
 ```
 
-## Color Legend
+## Data Sources
 
-| Color | Meaning |
-|-------|---------|
-| Red | Police department cameras |
-| Orange | Private operators (retail, HOA) |
-| Blue (small) | University cameras |
-| Red dashed line | City boundary |
-
-## Privacy & Purpose
-
-This project aims to increase transparency around public surveillance infrastructure. All data shown is already publicly documented in OpenStreetMap. The goal is to help residents understand the extent of automated surveillance in their community.
+- **Surveillance**: [OpenStreetMap](https://www.openstreetmap.org) under [ODbL license](https://opendatacommons.org/licenses/odbl/)
+- **Election Data**: [Michigan Secretary of State](https://www.michigan.gov/sos)
+- **Boundaries**: OpenStreetMap and Wayne County GIS
 
 ## License
 
@@ -166,9 +107,5 @@ This project aims to increase transparency around public surveillance infrastruc
 ## Acknowledgments
 
 - [OpenStreetMap contributors](https://www.openstreetmap.org)
-- [DeFlock](https://deflock.me) and [LPR Maps](https://lprmaps.com) for inspiration
-- [EFF's Atlas of Surveillance](https://atlasofsurveillance.org)
-
----
-
-**Note**: This is a civic transparency project. Camera locations shown are based on community-contributed OpenStreetMap data and may not be complete or fully accurate.
+- [DeFlock](https://deflock.me) for surveillance mapping inspiration
+- Wayne County and Michigan SOS for election data
